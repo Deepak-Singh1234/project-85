@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h4
+{
+	color: white !important;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Moving Rover On</title>
+</head>
+<body onload="add()">
+<center>
+<h1>Moving Rover On Mars</h1>
+<canvas id="myCanvas" height="350" width="500"></canvas>
+<h4>
+	<b class="text-danger">NOTE : </b> IF CARS ARE NOT VISIABLE PRESS ANY ARROW KEY
+</h4>
+<span><div><button type="button" id="up1" onclick="movingup1()">up of Koenigsegg_Agera_RS</button>
+	<button type="button" id="down1" onclick="movingdown1()">down of Koenigsegg_Agera_RS</button>
+	<button type="button" id="left1" onclick="movingleft1()">left of Koenigsegg_Agera_RS</button>
+	<button type="button" id="right1" onclick="movingright1()">right of Koenigsegg_Agera_RS</button></div>
+
+<div><button type="button" id="up2" onclick="movingup2()">up of Devel_Sixteen</button>
+	<button type="button" id="down2" onclick="movingdown2()">down of Devel_Sixteen</button>
+	<button type="button" id="left2" onclick="movingleft2()">left of Devel_Sixteen</button>
+	<button type="button" id="right2" onclick="movingright2()">right of Devel_Sixteen</button></div>
+</span>
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
